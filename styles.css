@@ -185,13 +185,41 @@ body {
     align-items: center;
     position: absolute;
     left: 40%;
-    bottom: 30%;
-    width: 15rem;
-    height: 5rem;
+    bottom: 0%;
+    width: 10rem;
+    height: 3rem;
 }
 
 .main button:hover {
     background: var(--light-color);
     transition: 0.3s all linear;
 }
+
+/* Card Container */
+.card-container {
+    width: 550px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 30rem;
+    left: 60%;
+    top: 100rem;
+}
+
+#card {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    border: 1px solid black;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+#card img {
+    display: block;
+    width: 300px;
+    max-height: 400px;
+    position: relative;
+    margin: 20px auto;
+}
+
 

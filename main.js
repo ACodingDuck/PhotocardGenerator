@@ -1,7 +1,22 @@
-let menu = document.querySelector(".menu-icon");
-let navbar = document.querySelector(".menu");
+let attack = 0;
+let defense = 0;
+let speed = 0;
 
-menu.onclick = () => {
-    navbar.classList.toggle("active");
-    menu.classList.toggle("move");
+const card = document.querySelector('#card');
+const btn = document.querySelector('#btn');
+const idolName = document.querySelector('#idol-name');
+const hp = document.querySelector('#hp');
+const type = document.querySelector('#type');
+const attackStat = document.querySelector('#attack');
+const defenseStat = document.querySelector('#defense');
+const speedStat = document.querySelector('#speed');
+
+
+function getRandomIdol() {
+    const idolNames = ["Sakura", "Yuki", "Hana", "Riku", "Aiko"];
+    const randomIndex = Math.floor(Math.random() * idolNames.length);
+    return idolNames[randomIndex];
 }
+
+
+btn.addEventListener('click', getRandomIdol);

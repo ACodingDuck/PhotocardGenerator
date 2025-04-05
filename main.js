@@ -7,7 +7,7 @@ let attack = ['50', '60', '70', '80', '90'];
 let defense = ['40', '50', '60', '70', '80'];
 let speed = ['30', '40', '50', '60', '70'];
 let imgs = ['imgs/yunjin1.jpg', 'imgs/chaewon1.jpg', 'imgs/eunchae1.jpg', 'imgs/kazuha.jpg', 'imgs/sakura1.jpg'];
-
+let types = ['fire', 'water', 'grass', 'electric', 'psychic'];
 
 let getRandomIdol = () => {
     let id = idols[Math.floor(Math.random() * idols.length)];
@@ -28,6 +28,8 @@ let getRandomIdol = () => {
     let attack1 = attack[Math.floor(Math.random() * attack.length)];
     let defense1 = defense[Math.floor(Math.random() * defense.length)];
     let speed1 = speed[Math.floor(Math.random() * speed.length)];
+    let type1 = types[Math.floor(Math.random() * types.length)];
+    let type2 = types[Math.floor(Math.random() * types.length)];
    
 
     const finalCard = id + ' ' + hp1 + ' ' + attack1 + ' ' + defense1 + ' ' + speed1;
@@ -42,8 +44,8 @@ let getRandomIdol = () => {
         <img src=${img1} alt="">
         <h2 class="idol-name">${id}</h2> 
         <div class="types">
-          <span>type 1</span>
-          <span>type 2</span>
+          <span>${type1}</span>
+          <span>${type2}</span>
         </div>
         <div class="stats">
           <div>

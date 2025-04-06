@@ -1,3 +1,11 @@
+const typeColor = {
+    fire: '#FF5733',
+    water: '#33A1FF',
+    grass: '#33FF57',
+    electric: '#FFEA33',
+    psychic: '#FF33A1',
+};
+
 const card = document.querySelector('#card');
 const btn = document.querySelector('#btn');
 

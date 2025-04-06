@@ -213,6 +213,7 @@ body {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     background-color: #ffffff;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
 }
 
 #card img {
